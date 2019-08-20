@@ -1,0 +1,27 @@
+{
+  "extends": ["airbnb", "plugin:@typescript-eslint/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "plugins": ["@typescript-eslint", "jest"],
+  "rules": {
+    "max-len": ["error", { "code": 120 }],
+    "comma-dangle": "off",
+    "operator-linebreak": "off",
+    "implicit-arrow-linebreak": "off",
+    "function-paren-newline": "off",
+    "object-curly-newline": "off",
+    "import/no-extraneous-dependencies": "off",
+    "react/require-default-props": [1, { "forbidDefaultForRequired": false }],
+    "react/default-props-match-prop-types": [1, { "allowRequiredDefaults": true}],
+    "react/static-property-placement": [1, "static public field"],
+    "react/jsx-filename-extension": [1, { "extensions": ["ts", ".js", ".jsx"] }]
+  },
+  "settings": {
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": true
+    }
+  }
+}
