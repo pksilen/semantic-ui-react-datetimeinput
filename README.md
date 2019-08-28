@@ -86,7 +86,7 @@ Numeric input control with step buttons for [Semantic UI React]
 | maxLength            | Maximum length of HTML input value (must be a positive integer)                                                                |
 | placeholder          | Placeholder text for input element when value is empty, applicable only when allowEmptyValue is true                           |
 | precision            | Decimal number precision when valueType is 'decimal'                                                                           |
-| showError            | Specifies if HTML input element should show error style                                                                        |
+| showError            | Specifies if HTML input element should show error styleMap                                                                        |
 | size                 | Specifies the size of the control                                                                                              |
 | stepAmount           | Specifies how much buttons increment/decrement the value (must be a positive integer or decimal number depending on valueType) |
 | valueType            | Specifies if value is integer or decimal number                                                                                |
