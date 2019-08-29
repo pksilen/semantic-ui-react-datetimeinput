@@ -3,11 +3,12 @@
   "version": "1.0.1",
   "description": "Date and time input controls with step buttons for Semantic UI React",
   "main": "lib/index.js",
+  "types": "lib/types/index.d.ts",
   "files": [
     "lib"
   ],
   "scripts": {
-    "check-types": "tsc",
+    "check-types": "tsc --outDir ./lib/types",
     "build": "babel ./src --out-dir lib --source-maps --extensions \".ts\",\".tsx\", --ignore \"src/**/*.test.*\",\"src/setupTests.js\"",
     "build-demo": "prettier --check demo/demo.tsx && eslint demo/demo.tsx --ext .tsx && tsc --project ./demo && webpack",
     "lint": "eslint ./src --ext .js,.ts,.tsx",

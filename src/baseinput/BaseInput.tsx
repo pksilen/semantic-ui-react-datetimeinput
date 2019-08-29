@@ -154,7 +154,7 @@ export default abstract class BaseInput<Props extends BaseInputProps> extends Re
 
   onKeyDown = (event: React.KeyboardEvent<HTMLInputElement>, inputType: InputType) => {
     const { dateValue } = this.props;
-    
+
     event.stopPropagation();
 
     switch (event.key) {
