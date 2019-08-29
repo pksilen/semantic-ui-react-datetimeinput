@@ -22,8 +22,8 @@ where you want to specify "start" date/time and "end" date/time. These can be sp
 Double-clicking "start" type input value, sets its value to minimum value and double-clicking "end" type input value sets its value to maximum value.
 
 Additionally, for example, Time input control can be configured to increment/decrement minutes by 5, 10 or 15 minutes whichever is mostly suitable for
-you analytics need. Similarly Date input control by default decrements/increments day value on double click by one week (7 days) and month value
-on double click by one quarter (3 months). All of these increment/decrement amounts for each component of time and date are fully configurable.
+your analytics need. Similarly Date input control by default decrements/increments day value on double click by one week (7 days) and month value
+on double click by one quarter (3 months). All of these increment/decrement amounts for each part of time and date are fully configurable.
 
 ## Prerequisites
     "react": "^16.0.0",
@@ -171,11 +171,11 @@ Following keyboard actions are available when a certain input is focused
  
 
 ## Styling example
-![Example image of styled TimeInput](https://raw.githubusercontent.com/pksilen/semantic-ui-react-datetimeinput/master/example/time_input_styled.png)
+![Example image of styled TimeInput](https://raw.githubusercontent.com/pksilen/semantic-ui-react-datetimeinput/master/example/time_input_styled.PNG)
 
 ![Example image of styled DateInput](https://raw.githubusercontent.com/pksilen/semantic-ui-react-datetimeinput/master/example/date_input_styled.png)
 
-![Example image of styled DateTimeInput](https://raw.githubusercontent.com/pksilen/semantic-ui-react-datetimeinput/master/example/date_time_input_styled.png)
+![Example image of styled DateTimeInput](https://raw.githubusercontent.com/pksilen/semantic-ui-react-datetimeinput/master/example/date_time_input_styled.PNG)
 
    styles.css
    
