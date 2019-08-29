@@ -84,7 +84,7 @@ on double click by one quarter (3 months). All of these increment/decrement amou
 | showTooltipDelayInMillis  | Specifies a delay in milliseconds for showing a tooltip                                                                        |
 | showTooltips              | Specifies if tooltips are shown                                                                                                |
 | size                      | Specifies the size of the control                                                                                              |
-| valueType                 | Specifies if value type, ie. start or end time or start or end date                                                            |
+| valueType                 | Specifies if value type, ie. start or end time/date or unspecified                                                             |
 
     
 ## Common optional property types
@@ -94,7 +94,7 @@ on double click by one quarter (3 months). All of these increment/decrement amou
     showTooltipDelayInMillis: number,
     showTooltips: boolean,
     size: 'mini' | 'small' | 'large' | 'big' | 'huge' | 'massive',
-    valueType: 'start' | 'end'
+    valueType: 'start' | 'end' | 'unspecified'
         
 ## Default values for common optional properties
     buttonPlacement: 'buttonsOutside',
