@@ -61,7 +61,7 @@ export default class DateUtils {
 
     if (buttonType === 'decrement') {
       newValue = currentValue - stepCount;
-      if (newValue % stepCount) {
+      if (newValue % stepCount && inputType !== 'date') {
         newValue = newValue + stepCount - (newValue % stepCount);
       }
       const minValue = DateUtils.getMinValue(inputType);
@@ -70,7 +70,7 @@ export default class DateUtils {
       }
     } else {
       newValue = currentValue + stepCount;
-      if (newValue % stepCount) {
+      if (newValue % stepCount && inputType !== 'date') {
         newValue -= newValue % stepCount;
       }
       const maxValue = DateUtils.getMaxValue(inputType, currentDate);

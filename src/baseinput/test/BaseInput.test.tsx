@@ -120,8 +120,6 @@ describe('onButtonClick()', () => {
       new Date('2019-01-10T13:30:00.000').getTime()
     );
   });
-
-
 });
 
 describe('changeValue()', () => {
@@ -129,7 +127,7 @@ describe('changeValue()', () => {
     const testBaseInputWrapper = mount(
       <TestBaseInput dateValue={date} onDateValueChange={onDateValueChangeMock} />
     );
-    const inputWrapper = testBaseInputWrapper.find('input');
+    const inputWrapper = testBaseInputWrapper.find('input').first();
 
     inputWrapper.simulate('change', { target: { value: '14' } });
 
@@ -139,12 +137,25 @@ describe('changeValue()', () => {
   });
 });
 
+describe('onInputFocus', () => {
+  it('should update the currently focused input type to state', () => {
+    const testBaseInputWrapper = mount(
+      <TestBaseInput dateValue={date} onDateValueChange={onDateValueChangeMock} />
+    );
+    const inputWrapper = testBaseInputWrapper.find('input').last();
+
+    inputWrapper.simulate('focus');
+
+    expect(testBaseInputWrapper.state('focusedInputType')).toBe('minute');
+  });
+});
+
 describe('resetValue()', () => {
   it('should change the hour value to minimum when valueType is "start"', () => {
     const testBaseInputWrapper = mount(
       <TestBaseInput dateValue={date} onDateValueChange={onDateValueChangeMock} />
     );
-    const inputWrapper = testBaseInputWrapper.find('input');
+    const inputWrapper = testBaseInputWrapper.find('input').first();
 
     inputWrapper.simulate('dblclick');
 
@@ -157,7 +168,7 @@ describe('resetValue()', () => {
     const testBaseInputWrapper = mount(
       <TestBaseInput valueType="end" dateValue={date} onDateValueChange={onDateValueChangeMock} />
     );
-    const inputWrapper = testBaseInputWrapper.find('input');
+    const inputWrapper = testBaseInputWrapper.find('input').first();
 
     inputWrapper.simulate('dblclick');
 
@@ -183,7 +194,7 @@ describe('onKeyDown()', () => {
       const testBaseInputWrapper = mount(
         <TestBaseInput dateValue={date} onDateValueChange={onDateValueChangeMock} />
       );
-      const inputWrapper = testBaseInputWrapper.find('input');
+      const inputWrapper = testBaseInputWrapper.find('input').first();
 
       inputWrapper.simulate('focus');
       inputWrapper.simulate('keydown', { key });
@@ -203,7 +214,7 @@ describe('onKeyDown()', () => {
       const testBaseInputWrapper = mount(
         <TestBaseInput dateValue={date} onDateValueChange={onDateValueChangeMock} />
       );
-      const inputWrapper = testBaseInputWrapper.find('input');
+      const inputWrapper = testBaseInputWrapper.find('input').first();
 
       inputWrapper.simulate('focus');
       inputWrapper.simulate('keydown', { key, ctrlKey: true });

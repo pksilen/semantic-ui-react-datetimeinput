@@ -1,15 +1,23 @@
 # semantic-ui-react-datetimeinput
-Under construction
 
-<!--- # semantic-ui-react-numberinput
-Numeric input control with step buttons for [Semantic UI React]
+Time and Date input controls with step buttons for [Semantic UI React]
 
 [![version][version-badge]][package]
 [![MIT License][license-badge]][license]
 
-![Example image of numberInput](https://raw.githubusercontent.com/pksilen/semantic-ui-react-numberinput/master/example/number_input_with_border_radius.png)
+Controls with large + and - buttons are ideal for mobile sites. The controls are specifically designed for analytics purposes
+where you want to specify "start" date/time an "end" date/time. This can be specified with valueType prop of the components.
+For example, Time input control can be configured to increment/decrement minutes by 5, 10 or 15 minutes whichever is mostly suitable for
+you analytics need. Similarly Date input control by default decrements/increments day value on double click by one week (7 days) and month value
+on double click by one quarter (3 months). All of these increment/decrement amounts are fully configurable.
 
-![Example image of numberInput](https://raw.githubusercontent.com/pksilen/semantic-ui-react-numberinput/master/example/right_buttons_number_input_with_border_radius.png)
+![Example image of DateInput](https://raw.githubusercontent.com/pksilen/semantic-ui-react-datetimeinput/master/example/date_input_buttons_outside.png)
+
+![Example image of TimeInput](https://raw.githubusercontent.com/pksilen/semantic-ui-react-datetimeinput/master/example/time_input_buttons_outside.png)
+
+![Example image of DateInput](https://raw.githubusercontent.com/pksilen/semantic-ui-react-datetimeinput/master/example/date_input_buttons_inside.png)
+
+![Example image of TimeInput](https://raw.githubusercontent.com/pksilen/semantic-ui-react-datetimeinput/master/example/time_input_buttons_inside.png)
 
 ## Prerequisites
     "react": "^16.0.0",
@@ -17,142 +25,179 @@ Numeric input control with step buttons for [Semantic UI React]
     "semantic-ui-react": "^0.87.0"
 
 ## Installation
-    npm install --save semantic-ui-react-numberinput
+    npm install --save semantic-ui-react-datetimeinput
     
 ## Demo
-   TimeInput [demo]
-    
-    
+   TimeInput, DateInput and DateTimeInput [demo] 
+   
 ## Example usage
     import React from 'react';
-    import TimeInput from 'semantic-ui-react-numberinput';
+    import { DateInput, TimeInput } from 'semantic-ui-react-datetimeinput';
     
-    class NumberInputExample extends React.Component {
+    class DateAndTimeInputExample extends React.Component {
 
         constructor(props) {
             super(props);
             this.state = {
-                value: '0'
+                dateValue: new Date()
             };
         }
         
-        changeValue = (newValue) => {
-            this.setState({ value: newValue });
+        changeDateValue = (newDateValue) => {
+            this.setState({ dateValue: newDateValue });
         }
        
         render() => {(
-            <TimeInput value={this.state.value} onChange={this.changeValue} />
+            <DateInput dateValue={this.state.dateValue} onDateValueChange={this.changeDateValue} />
+            <TimeInput dateValue={this.state.dateValue} onDateValueChange={this.changeDateValue} />
         )};
     }
     
-   Render TimeInput with step buttons on left and right side of the input (this is default behavior, if buttonPlacement is not specified)
+   Render TimeInput, DateInput or DateTimeInput with step buttons on outside of control (this is default behavior, if buttonPlacement is not specified)
              
-    <TimeInput buttonPlacement="leftAndRight" value={this.state.value} onChange={this.changeValue} />
+    <TimeInput buttonPlacement="buttonsOutside" value={this.state.dateValue} onDateValueChange={this.changeDateValue} />
+    <DateInput buttonPlacement="buttonsOutside" value={this.state.dateValue} onDateValueChange={this.changeDateValue} />
+    <DateTimeInput buttonPlacement="buttonsOutside" value={this.state.dateValue} onDateValueChange={this.changeDateValue} />
          
-   Render TimeInput with step buttons on the right side of the input
+   Render TimeInput, DateInput or DateTimeInput with step buttons inside control
                       
-    <TimeInput buttonPlacement="right" value={this.state.value} onChange={this.changeValue} />
-    
-   Specify allowed number range to be between 0 and 100
+    <TimeInput buttonPlacement="buttonsInside" value={this.state.dateValue} onDateValueChange={this.changeDateValue} />
+    <DateInput buttonPlacement="buttonsInside" value={this.state.dateValue} onDateValueChange={this.changeDateValue} />
+    <DateTimeInput buttonPlacement="buttonsInside" value={this.state.dateValue} onDateValueChange={this.changeDateValue} />
+   
+## Mandatory TimeInput, DateInput and DateTimeInput properties      
+    dateValue: Date, 
+    onDateValueChange: (newDateValue: Date) => void,
          
-    <TimeInput minValue={0} maxValue={100} value={this.state.value} onChange={this.changeValue} />
-         
-   Specify buttons to increment/decrement by 5 
-                  
-    <TimeInput stepAmount={5} value={this.state.value} onChange={this.changeValue} />
-         
-   Specify decimal TimeInput with increment/decrement step of 0.25 and default precision of 2 
-                   
-    <TimeInput valueType="decimal" stepAmount={0.25} value={this.state.value} onChange={this.changeValue} />
-          
-   Specify decimal TimeInput with increment/decrement step of 0.1 and precision of 1 
-                     
-    <TimeInput valueType="decimal" stepAmount={0.1} precision={1} value={this.state.value} onChange={this.changeValue} />
-
-## Mandatory TimeInput properties      
-    value: string, // must be parseable to integer or decimal number depending on valueType
-    onChange: (newValue: string) => void,
-         
-## Optional TimeInput properties
-| property             | description                                                                                                                    |
-| -------------------- | -------------------------------------------------------------------------------------------------------------------------------|
-| allowEmptyValue      | Specifies if value can be empty                                                                                                |    
-| buttonPlacement      | Specifies how step buttons are placed                                                                                          |
-| id                   | id for HTML outer div element                                                                                                  |
-| className            | class name(s) for HTML outer div element                                                                                       |
-| defaultValue         | Specifies default value to be used when value is empty (must be integer or decimal number depending on valueType)              |
-| minValue             | Minimum value accepted for TimeInput (must be integer or decimal number depending on valueType)                              |                                                                           |
-| maxValue             | Maximum value accepted for TimeInput (must be integer or decimal number depending on valueType)                              |
-| maxLength            | Maximum length of HTML input value (must be a positive integer)                                                                |
-| placeholder          | Placeholder text for input element when value is empty, applicable only when allowEmptyValue is true                           |
-| precision            | Decimal number precision when valueType is 'decimal'                                                                           |
-| showError            | Specifies if HTML input element should show error styleMap                                                                        |
-| size                 | Specifies the size of the control                                                                                              |
-| stepAmount           | Specifies how much buttons increment/decrement the value (must be a positive integer or decimal number depending on valueType) |
-| valueType            | Specifies if value is integer or decimal number                                                                                |
+## Common optional properties
+| property                  | description                                                                                                                    |
+| --------------------------| -------------------------------------------------------------------------------------------------------------------------------|
+| buttonPlacement           | Specifies how step buttons are placed                                                                                          |
+| focusColor                | Specifies color for focused input text                                                                                         |
+| doubleClickDelayInMillis  | Specifies button double click delay in milliseconds                                                                            |
+| showTooltipDelayInMillis  | Specifies a delay in milliseconds for showing a tooltip                                                                        |
+| showTooltips              | Specifies if tooltips are shown                                                                                                |
+| size                      | Specifies the size of the control                                                                                              |
+| valueType                 | Specifies if value type, ie. start or end time or start or end date                                                            |
 
     
-## Optional TimeInput property types
-    allowEmptyValue: boolean,
-    buttonPlacement: 'right' | 'leftAndRight'  
-    id: string,
-    className: string,
-    defaultValue: number,
-    minValue: number, 
-    maxValue: number,   
-    maxLength: number,
-    placeholder: string,
-    precision: number,
-    showError: boolean,
+## Common optional property types
+    buttonPlacement: 'buttonsInside' | 'buttonsOutside',  
+    focusColor: string,
+    doubleClickDelayInMillis: number,
+    showTooltipDelayInMillis: number,
+    showTooltips: boolean,
     size: 'mini' | 'small' | 'large' | 'big' | 'huge' | 'massive',
-    stepAmount: number,
-    valueType: 'integer' | 'decimal'
+    valueType: 'start' | 'end'
         
-## Default values for optional properties
-    allowEmptyValue: false,
-    buttonPlacement: 'leftAndRight',
-    id: undefined,
-    className: undefined,
-    defaultValue: undefined,
-    minValue: 0,
-    maxValue: 9999999999,
-    maxLength: 10,
-    placeholder: 'Enter a value',
-    precision: 2,
-    showError: false,
+## Default values for common optional properties
+    buttonPlacement: 'buttonsOutside',
+    focusColor: '#85b7d9',
+    doubleClickDelayInMillis: 250,
+    showTooltipDelayInMillis: 500,
+    showTooltips: true,
     size: 'small',
-    stepAmount: 1,
-    valueType: 'integer'
-        
+    valueType: 'start'
+    
+## TimeInput optional properties
+| property                    | description                                                                                                                          |
+| ----------------------------| -------------------------------------------------------------------------------------------------------------------------------------|
+| hourSingleClickStepCount    | Specifies how many hours a single click of a button increments or decrements current date value                                      |
+| hourDoubleClickStepCount    | Specifies how many hours a double click of a button increments or decrements  current date value, zero value disables double clicks  |
+| minuteSingleClickStepCount  | Specifies how many minutes a single click of a button increments or decrements current date value                                    |
+| minuteDoubleClickStepCount  | Specifies how many minutes a double click of a button increments or decrements  current date value, zero value disables double clicks|
+
+## TimeInput optional property types
+    hourSingleClickStepCount: number,  
+    hourDoubleClickStepCount: number,
+    minuteSingleClickStepCount: number,
+    minuteDoubleClickStepCount: number
+    
+## Default values for TimeInput optional properties
+    hourSingleClickStepCount: 1,
+    hourDoubleClickStepCount: 4,
+    minuteSingleClickStepCount: 1,
+    minuteDoubleClickStepCount: 5
+    
+## DateInput optional properties
+| property                    | description                                                                                                                         |
+| ----------------------------| ------------------------------------------------------------------------------------------------------------------------------------|
+| daySingleClickStepCount     | Specifies how many days a single click of a button increments or decrements current date value                                      |
+| dayDoubleClickStepCount     | Specifies how many days a double click of a button increments or decrements  current date value, zero value disables double clicks  |
+| monthSingleClickStepCount   | Specifies how many months a single click of a button increments or decrements current date value                                    |
+| monthDoubleClickStepCount   | Specifies how many months a double click of a button increments or decrements  current date value, zero value disables double clicks|
+| yearSingleClickStepCount    | Specifies how many years a single click of a button increments or decrements current date value                                     |
+| yearDoubleClickStepCount    | Specifies how many years a double click of a button increments or decrements  current date value, zero value disables double clicks |
+
+## TimeInput optional property types
+    daySingleClickStepCount: number,  
+    dayDoubleClickStepCount: number,
+    monthSingleClickStepCount: number,
+    monthDoubleClickStepCount: number,
+    yearhSingleClickStepCount: number,
+    yearDoubleClickStepCount: number
+    
+## Default values for TimeInput optional properties
+    daySingleClickStepCount: 1,
+    dayDoubleClickStepCount: 7,
+    monthSingleClickStepCount: 1,
+    monthDoubleClickStepCount: 3,
+    yearSingleClickStepCount: 1,
+    yearhDoubleClickStepCount: 5
+
+## Keyboard actions
+Following keyboard actions are available when a certain input is focused
+
+|key            |action                                             |
+|---------------|---------------------------------------------------|
+|ArrowUp        | Increments value like a button single click       |
+|ArrowDown      | Decrements value like a button single click       |
+|+              | Increments value like a button single click       |
+|-              | Decrements value like a button single click       |
+|PageUp         | Increments value like a button double click       |
+|PageDown       | Decrements value like a double button click       |
+|Home           | Sets value to minimum value                       |
+|End            | Sets value to maximum value                       |
+|Ctrl+ArrowUp   | Increments value like a button double click       |
+|Ctrl+ArrowDown | Decrements value like a button double click       |
+|Ctrl + +       | Increments value like a button double click       |
+|Ctrl + -       | Decrements value like a button double click       | 
+ 
+
 ## Styling example
-![Example image of numberInput](https://raw.githubusercontent.com/pksilen/semantic-ui-react-numberinput/master/example/styled_number_input.png)
+![Example image of styled TimeInput](https://raw.githubusercontent.com/pksilen/semantic-ui-react-datetimeinput/master/example/time_input_styled.png)
+
+![Example image of styled DateInput](https://raw.githubusercontent.com/pksilen/semantic-ui-react-datetimeinput/master/example/date_input_styled.png)
+
+![Example image of styled DateTimeInput](https://raw.githubusercontent.com/pksilen/semantic-ui-react-datetimeinput/master/example/date_time_input_styled.png)
 
    styles.css
    
-    .numberInput .ui.button {
-      background-color: red;
-      border-radius: 0 !important;
-      color: white;
+    .timeInput .ui.button, .dateInput .ui.button {
+      background-color: transparent;
     }
     
-    .numberInput .ui.input > input {
-      border-color: red;
-      color: red;
-      font-weight: bold;
-      width: 50px;
+    .dateTimeInput {
+      display: flex;
+    }
+    
+    .dateTimeInput .timeInput {
+      margin-left: 2em;
     }
     
    Applying CSS using className
    
-    <TimeInput className="numberInput" value={this.state.value} onChange={this.changeValue} />
+    <TimeInput className="timeInput" value={this.state.dateValue} onDateValueChange={this.changeDateValue} />
+    <DateInput className="dateInput" value={this.state.dateValue} onDateValueChange={this.changeDateValue} />
+    <DateTimeInput className="dateTimeInput" value={this.state.dateValue} onDateValueChange={this.changeDateValue} />
     
 ## License
 MIT License
 
 [license-badge]: https://img.shields.io/badge/license-MIT-green
-[license]: https://github.com/pksilen/semantic-ui-react-numberinput/blob/master/LICENSE
-[version-badge]: https://img.shields.io/npm/v/semantic-ui-react-numberinput.svg?style=flat-square
-[package]: https://www.npmjs.com/package/semantic-ui-react-numberinput
-[demo]: https://pksilen.github.io/semantic-ui-react-numberinput/
+[license]: https://github.com/pksilen/semantic-ui-react-datetimeinput/blob/master/LICENSE
+[version-badge]: https://img.shields.io/npm/v/semantic-ui-react-datetimeinput.svg?style=flat-square
+[package]: https://www.npmjs.com/package/semantic-ui-react-datetimeinput
+[demo]: https://pksilen.github.io/semantic-ui-react-datetimeinput/
 [Semantic UI React]: https://react.semantic-ui.com/
--->
+

@@ -27,6 +27,7 @@ export default class TestBaseInput extends BaseInput<BaseInputProps> {
       <div>
         {this.getButtonComponent('decrement')}
         {this.getInputComponent('hour')}
+        {this.getInputComponent('minute')}
         {this.getButtonComponent('increment')}
       </div>
     );
