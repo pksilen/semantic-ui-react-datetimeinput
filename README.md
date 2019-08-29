@@ -5,19 +5,25 @@ Time and Date input controls with step buttons for [Semantic UI React]
 [![version][version-badge]][package]
 [![MIT License][license-badge]][license]
 
-Controls with large + and - buttons are ideal for mobile sites. The controls are specifically designed for analytics purposes
-where you want to specify "start" date/time an "end" date/time. This can be specified with valueType prop of the components.
-For example, Time input control can be configured to increment/decrement minutes by 5, 10 or 15 minutes whichever is mostly suitable for
-you analytics need. Similarly Date input control by default decrements/increments day value on double click by one week (7 days) and month value
-on double click by one quarter (3 months). All of these increment/decrement amounts are fully configurable.
-
+DateInput  
 ![Example image of DateInput](https://raw.githubusercontent.com/pksilen/semantic-ui-react-datetimeinput/master/example/date_input_buttons_outside.png)
 
+TimeInput   
 ![Example image of TimeInput](https://raw.githubusercontent.com/pksilen/semantic-ui-react-datetimeinput/master/example/time_input_buttons_outside.png)
 
+DateInput    
 ![Example image of DateInput](https://raw.githubusercontent.com/pksilen/semantic-ui-react-datetimeinput/master/example/date_input_buttons_inside.png)
 
+TimeInput   
 ![Example image of TimeInput](https://raw.githubusercontent.com/pksilen/semantic-ui-react-datetimeinput/master/example/time_input_buttons_inside.png)
+
+Controls with large + and - buttons are ideal for mobile sites. These controls are specifically designed for analytics purposes
+where you want to specify "start" date/time and "end" date/time. These can be specified with valueType prop of the components.
+Double-clicking "start" type input value, sets its value to minimum value and double-clicking "end" type input value sets its value to maximum value.
+
+Additionally, for example, Time input control can be configured to increment/decrement minutes by 5, 10 or 15 minutes whichever is mostly suitable for
+you analytics need. Similarly Date input control by default decrements/increments day value on double click by one week (7 days) and month value
+on double click by one quarter (3 months). All of these increment/decrement amounts for each component of time and date are fully configurable.
 
 ## Prerequisites
     "react": "^16.0.0",

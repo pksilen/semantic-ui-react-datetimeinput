@@ -67,7 +67,7 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "semantic-ui-react": "^0.87.3",
-    "typescript": "^3.5.3",
+    "typescript": "^3.6.2",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.6"
   },
