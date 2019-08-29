@@ -1,5 +1,147 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`render() should render buttons without tooltips when doubleClickStepCounts are zero 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <Button
+    as="button"
+    disabled={false}
+    icon="minus"
+    onClick={[Function]}
+    size="small"
+    style={
+      Object {
+        "borderBottomRightRadius": 0,
+        "borderTopRightRadius": 0,
+        "margin": 0,
+        "maxHeight": "unset",
+        "minHeight": "unset",
+      }
+    }
+  />
+  <Popup
+    content="Double-click to set to 1"
+    disabled={false}
+    mouseEnterDelay={500}
+    mouseLeaveDelay={200}
+    offset={0}
+    on="hover"
+    pinned={false}
+    position="top left"
+    trigger={
+      <div
+        className="ui input small"
+      >
+        <input
+          maxLength={3}
+          onChange={[Function]}
+          onDoubleClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          style={
+            Object {
+              "borderColor": "rgba(34, 36, 38, .05)",
+              "borderRadius": 0,
+              "borderRightColor": "rgba(34, 36, 38, .05)",
+              "color": "#85b7d9",
+              "fontWeight": "bold",
+              "paddingLeft": "0.5em",
+              "paddingRight": "0.5em",
+              "textAlign": "right",
+              "width": "2.5em",
+            }
+          }
+          type="text"
+          value="10"
+        />
+      </div>
+    }
+  />
+  <Popup
+    content="Double-click to set to 1"
+    disabled={false}
+    mouseEnterDelay={500}
+    mouseLeaveDelay={200}
+    offset={0}
+    on="hover"
+    pinned={false}
+    position="top left"
+    trigger={
+      <div
+        className="ui input small"
+      >
+        <input
+          maxLength={3}
+          onChange={[Function]}
+          onDoubleClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          style={
+            Object {
+              "borderColor": "rgba(34, 36, 38, .05)",
+              "borderLeft": "none",
+              "borderRadius": 0,
+              "borderRightColor": "rgba(34, 36, 38, .05)",
+              "paddingLeft": "0.5em",
+              "paddingRight": "0.5em",
+              "textAlign": "right",
+              "width": "2.5em",
+            }
+          }
+          type="text"
+          value="1"
+        />
+      </div>
+    }
+  />
+  <div
+    className="ui input small"
+  >
+    <input
+      maxLength={3}
+      onChange={[Function]}
+      onDoubleClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      style={
+        Object {
+          "borderColor": "rgba(34, 36, 38, .05)",
+          "borderLeft": "none",
+          "borderRadius": 0,
+          "paddingLeft": "0.5em",
+          "paddingRight": "0.5em",
+          "textAlign": "right",
+          "width": "3.75em",
+        }
+      }
+      type="text"
+      value="2019"
+    />
+  </div>
+  <Button
+    as="button"
+    disabled={false}
+    icon="plus"
+    onClick={[Function]}
+    size="small"
+    style={
+      Object {
+        "borderBottomLeftRadius": 0,
+        "borderTopLeftRadius": 0,
+        "margin": 0,
+        "maxHeight": "unset",
+        "minHeight": "unset",
+      }
+    }
+  />
+</div>
+`;
+
 exports[`render() should render component correctly when buttonPlacement is "buttonsInside" and dateFormat is "D M YYYY" 1`] = `
 <div
   style={
@@ -1198,6 +1340,148 @@ exports[`render() should render component correctly without tooltips 1`] = `
         "maxHeight": "unset",
         "minHeight": "unset",
       }
+    }
+  />
+</div>
+`;
+
+exports[`render() should render inputs without tooltips when valueType is "unspecified" 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+    }
+  }
+>
+  <Popup
+    content="Double-click to decrement by 7"
+    disabled={false}
+    mouseEnterDelay={500}
+    mouseLeaveDelay={200}
+    offset={0}
+    on="hover"
+    pinned={false}
+    position="top left"
+    trigger={
+      <Button
+        as="button"
+        disabled={false}
+        icon="minus"
+        onClick={[Function]}
+        size="small"
+        style={
+          Object {
+            "borderBottomRightRadius": 0,
+            "borderTopRightRadius": 0,
+            "margin": 0,
+            "maxHeight": "unset",
+            "minHeight": "unset",
+          }
+        }
+      />
+    }
+  />
+  <div
+    className="ui input small"
+  >
+    <input
+      maxLength={3}
+      onChange={[Function]}
+      onDoubleClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      style={
+        Object {
+          "borderColor": "rgba(34, 36, 38, .05)",
+          "borderRadius": 0,
+          "borderRightColor": "rgba(34, 36, 38, .05)",
+          "color": "#85b7d9",
+          "fontWeight": "bold",
+          "paddingLeft": "0.5em",
+          "paddingRight": "0.5em",
+          "textAlign": "right",
+          "width": "2.5em",
+        }
+      }
+      type="text"
+      value="10"
+    />
+  </div>
+  <div
+    className="ui input small"
+  >
+    <input
+      maxLength={3}
+      onChange={[Function]}
+      onDoubleClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      style={
+        Object {
+          "borderColor": "rgba(34, 36, 38, .05)",
+          "borderLeft": "none",
+          "borderRadius": 0,
+          "borderRightColor": "rgba(34, 36, 38, .05)",
+          "paddingLeft": "0.5em",
+          "paddingRight": "0.5em",
+          "textAlign": "right",
+          "width": "2.5em",
+        }
+      }
+      type="text"
+      value="1"
+    />
+  </div>
+  <div
+    className="ui input small"
+  >
+    <input
+      maxLength={3}
+      onChange={[Function]}
+      onDoubleClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      style={
+        Object {
+          "borderColor": "rgba(34, 36, 38, .05)",
+          "borderLeft": "none",
+          "borderRadius": 0,
+          "paddingLeft": "0.5em",
+          "paddingRight": "0.5em",
+          "textAlign": "right",
+          "width": "3.75em",
+        }
+      }
+      type="text"
+      value="2019"
+    />
+  </div>
+  <Popup
+    content="Double-click to increment by 7"
+    disabled={false}
+    mouseEnterDelay={500}
+    mouseLeaveDelay={200}
+    offset={0}
+    on="hover"
+    pinned={false}
+    position="top left"
+    trigger={
+      <Button
+        as="button"
+        disabled={false}
+        icon="plus"
+        onClick={[Function]}
+        size="small"
+        style={
+          Object {
+            "borderBottomLeftRadius": 0,
+            "borderTopLeftRadius": 0,
+            "margin": 0,
+            "maxHeight": "unset",
+            "minHeight": "unset",
+          }
+        }
+      />
     }
   />
 </div>

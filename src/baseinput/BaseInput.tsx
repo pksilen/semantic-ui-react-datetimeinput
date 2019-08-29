@@ -279,8 +279,9 @@ export default abstract class BaseInput<Props extends BaseInputProps> extends Re
       />
     );
 
-    if (showTooltips) {
-      const buttonDoubleClickStepCount = this.getClickStepCount(inputType, 'double');
+    const buttonDoubleClickStepCount = this.getClickStepCount(inputType, 'double');
+
+    if (showTooltips && buttonDoubleClickStepCount > 0) {
       const tooltipText = `Double-click to ${buttonType} by ${buttonDoubleClickStepCount}`;
       return (
         <Popup

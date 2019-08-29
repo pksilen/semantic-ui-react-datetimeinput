@@ -148,6 +148,28 @@ describe('render()', () => {
     expect(dateInputWrapper).toMatchSnapshot();
   });
 
+  it('should render inputs without tooltips when valueType is "unspecified"', () => {
+    const dateInputWrapper = renderShallow(
+      <DateInput valueType="unspecified" dateValue={date} onDateValueChange={onDateValueChangeMock} />
+    );
+
+    expect(dateInputWrapper).toMatchSnapshot();
+  });
+
+  it('should render buttons without tooltips when doubleClickStepCounts are zero', () => {
+    const dateInputWrapper = renderShallow(
+      <DateInput
+        dayDoubleClickStepCount={0}
+        monthDoubleClickStepCount={0}
+        yearDoubleClickStepCount={0}
+        dateValue={date}
+        onDateValueChange={onDateValueChangeMock}
+      />
+    );
+
+    expect(dateInputWrapper).toMatchSnapshot();
+  });
+
   it('should render additional props to outside div', () => {
     const dateInputWrapper = mount(
       <DateInput
