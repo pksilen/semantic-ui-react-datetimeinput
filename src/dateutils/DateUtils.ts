@@ -8,11 +8,13 @@ import { StrictValueType } from '../types/ValueType';
 export default class DateUtils {
   static readonly MAX_MONTH = 12;
 
+  static readonly MAX_DAY = 31;
+
   static readonly MAX_HOUR = 23;
 
   static readonly MAX_MINUTE = 59;
 
-  static getMaxValue(inputType: InputType, currentDate: Date): number {
+  static getMaxValue(inputType: InputType, currentDate?: Date): number {
     switch (inputType) {
       case 'year':
         return Number.MAX_SAFE_INTEGER;
@@ -21,7 +23,10 @@ export default class DateUtils {
         return DateUtils.MAX_MONTH;
 
       case 'date':
-        return moment(currentDate).daysInMonth();
+        if (currentDate) {
+          return moment(currentDate).daysInMonth();
+        }
+        return DateUtils.MAX_DAY;
 
       case 'hour':
         return DateUtils.MAX_HOUR;

@@ -1,9 +1,9 @@
-import { TimeInputProps } from '../TimeInputProps';
+import { OptionalTimeInputProps } from '../TimeInputProps';
 import Validators from '../../validators/Validators';
 import DateUtils from '../../dateutils/DateUtils';
 
 export default class TimeInputPropsValidator {
-  static validatePropsInDevelopmentMode(props: TimeInputProps): void {
+  static validatePropsInDevelopmentMode(props: OptionalTimeInputProps): void {
     if (process.env.NODE_ENV === 'development') {
       Validators.validateIntegerWithinLimits(
         props.hourSingleClickStepCount,
