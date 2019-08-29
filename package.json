@@ -9,7 +9,7 @@
   "scripts": {
     "check-types": "tsc",
     "build": "babel ./src --out-dir lib --source-maps --extensions \".ts\",\".tsx\", --ignore \"src/**/*.test.*\",\"src/setupTests.js\"",
-    "build-demo": "prettier --check demo/demo.js && eslint demo/demo.js && webpack",
+    "build-demo": "prettier --check demo/demo.tsx && eslint demo/demo.tsx --ext .tsx && tsc --project ./demo && webpack",
     "lint": "eslint ./src --ext .js,.ts,.tsx",
     "prebuild": "npm run prettier && npm run lint && npm run check-types && npm run test",
     "prepublishOnly": "npm run build",

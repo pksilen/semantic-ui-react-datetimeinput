@@ -2,7 +2,7 @@ const path = require('path');
 
 const config = {
   entry: {
-    demo: './demo/demo.js',
+    demo: './demo/demo.tsx',
   },
   output: {
     path: path.resolve(__dirname, 'demo'),
@@ -11,7 +11,7 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.tsx?$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
       },
