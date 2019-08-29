@@ -1,6 +1,6 @@
 {
   "name": "semantic-ui-react-datetimeinput",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Date and time input controls with step buttons for Semantic UI React",
   "main": "lib/index.js",
   "types": "lib/types/index.d.ts",
