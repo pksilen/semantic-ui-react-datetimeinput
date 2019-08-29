@@ -2,8 +2,6 @@ import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import * as _ from 'lodash';
 import { Button, Popup } from 'semantic-ui-react';
-// eslint-disable-next-line @typescript-eslint/ban-ts-ignore
-// @ts-ignore
 import moment from 'moment';
 import { BaseInputProps, BaseInputPropTypes, OptionalBaseInputProps } from './BaseInputProps';
 import Constants from '../utils/Constants';
