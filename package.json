@@ -26,7 +26,11 @@
     "Semantic UI",
     "Date",
     "Time",
-    "Input"
+    "Input",
+    "DateInput",
+    "TimeInput",
+    "DatePicker",
+    "TimePicker"
   ],
   "author": "Petri Silen",
   "license": "MIT",

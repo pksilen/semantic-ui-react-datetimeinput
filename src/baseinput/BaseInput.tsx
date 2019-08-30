@@ -48,11 +48,7 @@ export default abstract class BaseInput<Props extends BaseInputProps> extends Re
 
   abstract getClickStepCount(inputType: InputType, clickType: ClickType): number;
 
-  onButtonClick = (
-    buttonType: ButtonType,
-    inputType: InputType,
-    hasDoubleClicksEnabled = true
-  ) => {
+  onButtonClick = (buttonType: ButtonType, inputType: InputType, hasDoubleClicksEnabled = true) => {
     const { dateValue } = this.props;
     const currentValue = moment(dateValue).get(inputType);
     const timeoutID = this.getTimeoutIDMap()[`${buttonType} ${inputType}`];
@@ -152,8 +148,7 @@ export default abstract class BaseInput<Props extends BaseInputProps> extends Re
 
   onKeyDown = (event: React.KeyboardEvent<HTMLInputElement>, inputType: InputType) => {
     const { dateValue } = this.props;
-
-    event.stopPropagation();
+    let handled = false;
 
     switch (event.key) {
       case 'ArrowUp':
@@ -163,6 +158,7 @@ export default abstract class BaseInput<Props extends BaseInputProps> extends Re
         } else {
           this.onButtonClick('increment', inputType, false);
         }
+        handled = true;
         break;
 
       case 'ArrowDown':
@@ -172,25 +168,35 @@ export default abstract class BaseInput<Props extends BaseInputProps> extends Re
         } else {
           this.onButtonClick('decrement', inputType, false);
         }
+        handled = true;
         break;
 
       case 'PageUp':
         _.times(2, () => this.onButtonClick('increment', inputType));
+        handled = true;
         break;
 
       case 'PageDown':
         _.times(2, () => this.onButtonClick('decrement', inputType));
+        handled = true;
         break;
 
       case 'Home':
         this.resetToValue(DateUtils.getMinValue(inputType), inputType);
+        handled = true;
         break;
 
       case 'End':
         this.resetToValue(DateUtils.getMaxValue(inputType, dateValue), inputType);
+        handled = true;
         break;
 
       default:
+    }
+
+    if (handled) {
+      event.preventDefault();
+      event.stopPropagation();
     }
   };
 
@@ -237,7 +243,11 @@ export default abstract class BaseInput<Props extends BaseInputProps> extends Re
     );
 
     if (showTooltips && valueType !== 'unspecified' && inputType !== 'year') {
-      const inputResetValue = DateUtils.getInputResetValue(dateValue, valueType as StrictValueType, inputType);
+      const inputResetValue = DateUtils.getInputResetValue(
+        dateValue,
+        valueType as StrictValueType,
+        inputType
+      );
       const tooltipText = `Double-click to set to ${inputResetValue}`;
 
       return (
