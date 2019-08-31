@@ -15,44 +15,57 @@ export default class DateUtils {
   static readonly MAX_MINUTE = 59;
 
   static getMaxValue(inputType: InputType, currentDate?: Date): number {
+    let maxValue = 0;
+
     switch (inputType) {
       case 'year':
-        return Number.MAX_SAFE_INTEGER;
+        maxValue = Number.MAX_SAFE_INTEGER;
+        break;
 
       case 'month':
-        return DateUtils.MAX_MONTH;
+        maxValue = DateUtils.MAX_MONTH;
+        break;
 
       case 'date':
         if (currentDate) {
-          return moment(currentDate).daysInMonth();
+          maxValue = moment(currentDate).daysInMonth();
         }
-        return DateUtils.MAX_DAY;
+        maxValue = DateUtils.MAX_DAY;
+        break;
 
       case 'hour':
-        return DateUtils.MAX_HOUR;
+        maxValue = DateUtils.MAX_HOUR;
+        break;
 
       case 'minute':
-        return DateUtils.MAX_MINUTE;
+        maxValue = DateUtils.MAX_MINUTE;
+        break;
 
-      default:
-        throw new Error('Invalid input type');
+      // no default
     }
+
+    return maxValue;
   }
 
   static getMinValue(inputType: InputType): number {
+    let minValue = 0;
+
     switch (inputType) {
       case 'year':
       case 'hour':
       case 'minute':
-        return 0;
+        minValue = 0;
+        break;
 
       case 'month':
       case 'date':
-        return 1;
+        minValue = 1;
+        break;
 
-      default:
-        throw new Error('Invalid input type');
+      // no default
     }
+
+    return minValue;
   }
 
   static getNewInputValue(
