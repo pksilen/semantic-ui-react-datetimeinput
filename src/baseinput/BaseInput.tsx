@@ -191,7 +191,7 @@ export default abstract class BaseInput<Props extends BaseInputProps> extends Re
         handled = true;
         break;
 
-      default:
+      // no default
     }
 
     if (handled) {
