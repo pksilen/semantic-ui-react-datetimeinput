@@ -3,6 +3,8 @@
 Time and Date input controls with step buttons for [Semantic UI React]
 
 [![version][version-badge]][package]
+[![build][build]][circleci]
+[![coverage][coverage]][codecov]
 [![MIT License][license-badge]][license]
 
 DateInput  
@@ -204,6 +206,10 @@ MIT License
 [license]: https://github.com/pksilen/semantic-ui-react-datetimeinput/blob/master/LICENSE
 [version-badge]: https://img.shields.io/npm/v/semantic-ui-react-datetimeinput.svg?style=flat-square
 [package]: https://www.npmjs.com/package/semantic-ui-react-datetimeinput
+[build]: https://img.shields.io/circleci/project/github/pksilen/semantic-ui-react-datetimeinput/master.svg?style=flat-square
+[circleci]: https://circleci.com/gh/pksilen/semantic-ui-react-datetimeinput/tree/master
+[coverage]: https://img.shields.io/codecov/c/github/pksilen/semantic-ui-react-datetimeinput/master.svg?style=flat-square
+[codecov]: https://codecov.io/gh/pksilen/semantic-ui-react-datetimeinput
 [demo]: https://pksilen.github.io/semantic-ui-react-datetimeinput/
 [Semantic UI React]: https://react.semantic-ui.com/
 
