@@ -18,7 +18,7 @@ jobs:
             - node_modules
       - run:
           name: Build
-          command: npm run build:ci
+          command: npm run build
       - run:
           name: Build demo
           command: npm run build-demo
