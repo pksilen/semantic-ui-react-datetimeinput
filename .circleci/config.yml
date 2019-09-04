@@ -3,6 +3,8 @@ jobs:
   build:
     docker:
       - image: circleci/node:10.16
+    environment:
+      TZ: "Europe/Helsinki"
     steps:
       - checkout
       - restore_cache:

@@ -29,8 +29,9 @@ export default class DateUtils {
       case 'date':
         if (currentDate) {
           maxValue = moment(currentDate).daysInMonth();
+        } else {
+          maxValue = DateUtils.MAX_DAY;
         }
-        maxValue = DateUtils.MAX_DAY;
         break;
 
       case 'hour':
