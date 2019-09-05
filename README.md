@@ -5,6 +5,9 @@ Time and Date input controls with step buttons for [Semantic UI React]
 [![version][version-badge]][package]
 [![build][build]][circleci]
 [![coverage][coverage]][codecov]
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=pksilen_semantic-ui-react-datetimeinput&metric=alert_status)](https://sonarcloud.io/dashboard?id=pksilen_semantic-ui-react-datetimeinput)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=pksilen_semantic-ui-react-datetimeinput&metric=bugs)](https://sonarcloud.io/dashboard?id=pksilen_semantic-ui-react-datetimeinput)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=pksilen_semantic-ui-react-datetimeinput&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=pksilen_semantic-ui-react-datetimeinput)
 [![MIT License][license-badge]][license]
 
 DateInput  
