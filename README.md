@@ -75,6 +75,8 @@ on double click by one quarter (3 months). All of these increment/decrement amou
     <TimeInput buttonPlacement="buttonsInside" value={this.state.dateValue} onDateValueChange={this.changeDateValue} />
     <DateInput buttonPlacement="buttonsInside" value={this.state.dateValue} onDateValueChange={this.changeDateValue} />
     <DateTimeInput buttonPlacement="buttonsInside" value={this.state.dateValue} onDateValueChange={this.changeDateValue} />
+    
+   More examples in demo/demo.tsx file
    
 ## Mandatory TimeInput, DateInput and DateTimeInput properties      
     dateValue: Date, 
