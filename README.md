@@ -4,6 +4,7 @@ Time and Date input controls with step buttons for [Semantic UI React]
 
 [![version][version-badge]][package]
 [![build][build]][circleci]
+[![Downloads][downloads]][package]
 [![coverage][coverage]][codecov]
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=pksilen_semantic-ui-react-datetimeinput&metric=alert_status)](https://sonarcloud.io/dashboard?id=pksilen_semantic-ui-react-datetimeinput)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=pksilen_semantic-ui-react-datetimeinput&metric=bugs)](https://sonarcloud.io/dashboard?id=pksilen_semantic-ui-react-datetimeinput)
@@ -42,41 +43,47 @@ on double click by one quarter (3 months). All of these increment/decrement amou
    TimeInput, DateInput and DateTimeInput [demo] 
    
 ## Example usage
-    import React from 'react';
-    import { DateInput, TimeInput } from 'semantic-ui-react-datetimeinput';
-    
-    class DateAndTimeInputExample extends React.Component {
+```jsx
+import React from 'react';
+import { DateInput, TimeInput } from 'semantic-ui-react-datetimeinput';
 
-        constructor(props) {
-            super(props);
-            this.state = {
-                dateValue: new Date()
-            };
-        }
-        
-        changeDateValue = (newDateValue) => {
-            this.setState({ dateValue: newDateValue });
-        }
-       
-        render() => {(
-            <DateInput dateValue={this.state.dateValue} onDateValueChange={this.changeDateValue} />
-            <TimeInput dateValue={this.state.dateValue} onDateValueChange={this.changeDateValue} />
-        )};
+class DateAndTimeInputExample extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            dateValue: new Date()
+        };
     }
+
+    changeDateValue = (newDateValue) => {
+        this.setState({ dateValue: newDateValue });
+    }
+
+    render() => {(
+        <DateInput dateValue={this.state.dateValue} onDateValueChange={this.changeDateValue} />
+        <TimeInput dateValue={this.state.dateValue} onDateValueChange={this.changeDateValue} />
+    )};
+}
+```
     
-   Render TimeInput, DateInput or DateTimeInput with step buttons on outside of control (this is default behavior, if buttonPlacement is not specified)
-             
-    <TimeInput buttonPlacement="buttonsOutside" value={this.state.dateValue} onDateValueChange={this.changeDateValue} />
-    <DateInput buttonPlacement="buttonsOutside" value={this.state.dateValue} onDateValueChange={this.changeDateValue} />
-    <DateTimeInput buttonPlacement="buttonsOutside" value={this.state.dateValue} onDateValueChange={this.changeDateValue} />
+Render TimeInput, DateInput or DateTimeInput with step buttons on outside of control (this is default behavior, if buttonPlacement is not specified)
+
+```jsx
+<TimeInput buttonPlacement="buttonsOutside" value={this.state.dateValue} onDateValueChange={this.changeDateValue} />
+<DateInput buttonPlacement="buttonsOutside" value={this.state.dateValue} onDateValueChange={this.changeDateValue} />
+<DateTimeInput buttonPlacement="buttonsOutside" value={this.state.dateValue} onDateValueChange={this.changeDateValue} />
+```
          
-   Render TimeInput, DateInput or DateTimeInput with step buttons inside control
-                      
-    <TimeInput buttonPlacement="buttonsInside" value={this.state.dateValue} onDateValueChange={this.changeDateValue} />
-    <DateInput buttonPlacement="buttonsInside" value={this.state.dateValue} onDateValueChange={this.changeDateValue} />
-    <DateTimeInput buttonPlacement="buttonsInside" value={this.state.dateValue} onDateValueChange={this.changeDateValue} />
+Render TimeInput, DateInput or DateTimeInput with step buttons inside control
+
+```jsx
+<TimeInput buttonPlacement="buttonsInside" value={this.state.dateValue} onDateValueChange={this.changeDateValue} />
+<DateInput buttonPlacement="buttonsInside" value={this.state.dateValue} onDateValueChange={this.changeDateValue} />
+<DateTimeInput buttonPlacement="buttonsInside" value={this.state.dateValue} onDateValueChange={this.changeDateValue} />
+```
     
-   More examples in demo/demo.tsx file
+   More examples in `demo/demo.tsx` file
    
 ## Mandatory TimeInput, DateInput and DateTimeInput properties      
     dateValue: Date, 
@@ -95,22 +102,26 @@ on double click by one quarter (3 months). All of these increment/decrement amou
 
     
 ## Common optional property types
-    buttonPlacement: 'buttonsInside' | 'buttonsOutside',  
-    focusColor: string,
-    doubleClickDelayInMillis: number,
-    showTooltipDelayInMillis: number,
-    showTooltips: boolean,
-    size: 'mini' | 'small' | 'large' | 'big' | 'huge' | 'massive',
-    valueType: 'start' | 'end' | 'unspecified'
+```ts
+buttonPlacement: 'buttonsInside' | 'buttonsOutside',  
+focusColor: string,
+doubleClickDelayInMillis: number,
+showTooltipDelayInMillis: number,
+showTooltips: boolean,
+size: 'mini' | 'small' | 'large' | 'big' | 'huge' | 'massive',
+valueType: 'start' | 'end' | 'unspecified'
+```
         
 ## Default values for common optional properties
-    buttonPlacement: 'buttonsOutside',
-    focusColor: '#85b7d9',
-    doubleClickDelayInMillis: 250,
-    showTooltipDelayInMillis: 500,
-    showTooltips: true,
-    size: 'small',
-    valueType: 'start'
+```js
+buttonPlacement: 'buttonsOutside',
+focusColor: '#85b7d9',
+doubleClickDelayInMillis: 250,
+showTooltipDelayInMillis: 500,
+showTooltips: true,
+size: 'small',
+valueType: 'start'
+```
     
 ## TimeInput optional properties
 | property                    | description                                                                                                                          |
@@ -121,16 +132,20 @@ on double click by one quarter (3 months). All of these increment/decrement amou
 | minuteDoubleClickStepCount  | Specifies how many minutes a double click of a button increments or decrements  current date value, zero value disables double clicks|
 
 ## TimeInput optional property types
-    hourSingleClickStepCount: number,  
-    hourDoubleClickStepCount: number,
-    minuteSingleClickStepCount: number,
-    minuteDoubleClickStepCount: number
+```ts
+hourSingleClickStepCount: number,  
+hourDoubleClickStepCount: number,
+minuteSingleClickStepCount: number,
+minuteDoubleClickStepCount: number
+```
     
 ## Default values for TimeInput optional properties
-    hourSingleClickStepCount: 1,
-    hourDoubleClickStepCount: 4,
-    minuteSingleClickStepCount: 1,
-    minuteDoubleClickStepCount: 5
+```js
+hourSingleClickStepCount: 1,
+hourDoubleClickStepCount: 4,
+minuteSingleClickStepCount: 1,
+minuteDoubleClickStepCount: 5
+```
     
 ## DateInput optional properties
 | property                    | description                                                                                                                         |
@@ -143,20 +158,24 @@ on double click by one quarter (3 months). All of these increment/decrement amou
 | yearDoubleClickStepCount    | Specifies how many years a double click of a button increments or decrements  current date value, zero value disables double clicks |
 
 ## TimeInput optional property types
-    daySingleClickStepCount: number,  
-    dayDoubleClickStepCount: number,
-    monthSingleClickStepCount: number,
-    monthDoubleClickStepCount: number,
-    yearhSingleClickStepCount: number,
-    yearDoubleClickStepCount: number
+```ts
+daySingleClickStepCount: number,  
+dayDoubleClickStepCount: number,
+monthSingleClickStepCount: number,
+monthDoubleClickStepCount: number,
+yearhSingleClickStepCount: number,
+yearDoubleClickStepCount: number
+```
     
 ## Default values for TimeInput optional properties
-    daySingleClickStepCount: 1,
-    dayDoubleClickStepCount: 7,
-    monthSingleClickStepCount: 1,
-    monthDoubleClickStepCount: 3,
-    yearSingleClickStepCount: 1,
-    yearhDoubleClickStepCount: 5
+```js
+daySingleClickStepCount: 1,
+dayDoubleClickStepCount: 7,
+monthSingleClickStepCount: 1,
+monthDoubleClickStepCount: 3,
+yearSingleClickStepCount: 1,
+yearhDoubleClickStepCount: 5
+```
 
 ## Keyboard actions
 Following keyboard actions are available when a certain input is focused
@@ -184,25 +203,28 @@ Following keyboard actions are available when a certain input is focused
 
 ![Example image of styled DateTimeInput](https://raw.githubusercontent.com/pksilen/semantic-ui-react-datetimeinput/master/example/date_time_input_styled.PNG)
 
-   styles.css
-   
-    .timeInput .ui.button, .dateInput .ui.button {
-      background-color: transparent;
-    }
+styles.css
+
+```css
+.timeInput .ui.button, .dateInput .ui.button {
+  background-color: transparent;
+}
+
+.dateTimeInput {
+  display: flex;
+}
+
+.dateTimeInput .timeInput {
+  margin-left: 2em;
+}
+```
     
-    .dateTimeInput {
-      display: flex;
-    }
-    
-    .dateTimeInput .timeInput {
-      margin-left: 2em;
-    }
-    
-   Applying CSS using className
-   
-    <TimeInput className="timeInput" value={this.state.dateValue} onDateValueChange={this.changeDateValue} />
-    <DateInput className="dateInput" value={this.state.dateValue} onDateValueChange={this.changeDateValue} />
-    <DateTimeInput className="dateTimeInput" value={this.state.dateValue} onDateValueChange={this.changeDateValue} />
+Applying CSS using className
+```jsx
+<TimeInput className="timeInput" value={this.state.dateValue} onDateValueChange={this.changeDateValue} />
+<DateInput className="dateInput" value={this.state.dateValue} onDateValueChange={this.changeDateValue} />
+<DateTimeInput className="dateTimeInput" value={this.state.dateValue} onDateValueChange={this.changeDateValue} />
+```
     
 ## License
 MIT License
@@ -211,6 +233,7 @@ MIT License
 [license]: https://github.com/pksilen/semantic-ui-react-datetimeinput/blob/master/LICENSE
 [version-badge]: https://img.shields.io/npm/v/semantic-ui-react-datetimeinput.svg?style=flat-square
 [package]: https://www.npmjs.com/package/semantic-ui-react-datetimeinput
+[downloads]: https://img.shields.io/npm/dm/backk
 [build]: https://img.shields.io/circleci/project/github/pksilen/semantic-ui-react-datetimeinput/master.svg?style=flat-square
 [circleci]: https://circleci.com/gh/pksilen/semantic-ui-react-datetimeinput/tree/master
 [coverage]: https://img.shields.io/codecov/c/github/pksilen/semantic-ui-react-datetimeinput/master.svg?style=flat-square
