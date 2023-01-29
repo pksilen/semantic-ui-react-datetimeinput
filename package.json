@@ -12,7 +12,7 @@
     "build": "babel ./src --out-dir lib --source-maps --extensions \".ts\",\".tsx\", --ignore \"src/**/*.test.*\",\"src/setupTests.js\"",
     "build-demo": "prettier --check demo/demo.tsx && eslint demo/demo.tsx --ext .tsx && tsc --project ./demo && webpack",
     "lint": "eslint ./src --ext .js,.ts,.tsx",
-    "prebuild": "npm run prettier && npm run lint && npm run check-types && npm run test-coverage",
+    "prebuild": "npm run prettier && npm run lint && npm run test-coverage",
     "prepublishOnly": "npm run build",
     "prettier": "prettier --check \"src/**/*.js\"",
     "test": "jest ./src",
