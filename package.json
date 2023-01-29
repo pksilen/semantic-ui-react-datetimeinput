@@ -49,6 +49,7 @@
     "@types/enzyme": "^3.10.3",
     "@types/jest": "^24.0.18",
     "@types/lodash": "^4.14.138",
+    "@types/node": "^18.11.18",
     "@types/prop-types": "^15.7.1",
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
@@ -69,11 +70,12 @@
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.7.0",
     "jest": "^29.3.1",
+    "jest-environment-jsdom": "^29.4.1",
     "prettier": "^1.18.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "semantic-ui-react": "^0.87.3",
-    "typescript": "^3.6.2",
+    "typescript": "^4.9.4",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1"
   },
@@ -83,6 +85,7 @@
     "prop-types": "^15.7.2"
   },
   "jest": {
+    "testEnvironment": "jsdom",
     "setupFilesAfterEnv": [
       "<rootDir>/src/setupTests.js"
     ],

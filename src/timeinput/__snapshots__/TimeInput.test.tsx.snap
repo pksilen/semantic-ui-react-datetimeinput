@@ -3,7 +3,7 @@
 exports[`render() should render component correctly when buttonPlacement is "buttonsInside" 1`] = `
 <div
   style={
-    Object {
+    {
       "display": "flex",
     }
   }
@@ -28,7 +28,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
           onFocus={[Function]}
           onKeyDown={[Function]}
           style={
-            Object {
+            {
               "borderBottomRightRadius": 0,
               "borderTopRightRadius": 0,
               "color": "#85b7d9",
@@ -47,7 +47,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
   />
   <div
     style={
-      Object {
+      {
         "display": "flex",
         "flexDirection": "column",
       }
@@ -70,7 +70,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
           onClick={[Function]}
           size="small"
           style={
-            Object {
+            {
               "borderRadius": 0,
               "flex": "0 0 50%",
               "margin": 0,
@@ -99,7 +99,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
           onClick={[Function]}
           size="small"
           style={
-            Object {
+            {
               "borderRadius": 0,
               "flex": "0 0 50%",
               "margin": 0,
@@ -132,7 +132,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
           onFocus={[Function]}
           onKeyDown={[Function]}
           style={
-            Object {
+            {
               "borderRadius": 0,
               "paddingLeft": "0.5em",
               "paddingRight": "0.5em",
@@ -148,7 +148,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
   />
   <div
     style={
-      Object {
+      {
         "display": "flex",
         "flexDirection": "column",
       }
@@ -171,7 +171,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
           onClick={[Function]}
           size="small"
           style={
-            Object {
+            {
               "borderBottomLeftRadius": 0,
               "borderBottomRightRadius": 0,
               "borderTopLeftRadius": 0,
@@ -202,7 +202,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
           onClick={[Function]}
           size="small"
           style={
-            Object {
+            {
               "borderBottomLeftRadius": 0,
               "borderTopLeftRadius": 0,
               "borderTopRightRadius": 0,
@@ -223,7 +223,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
 exports[`render() should render component correctly when buttonPlacement is "buttonsOutside" 1`] = `
 <div
   style={
-    Object {
+    {
       "display": "flex",
     }
   }
@@ -245,7 +245,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
         onClick={[Function]}
         size="small"
         style={
-          Object {
+          {
             "borderBottomRightRadius": 0,
             "borderTopRightRadius": 0,
             "margin": 0,
@@ -276,7 +276,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
           onFocus={[Function]}
           onKeyDown={[Function]}
           style={
-            Object {
+            {
               "borderColor": "rgba(34, 36, 38, .05)",
               "borderRadius": 0,
               "borderRightColor": "rgba(34, 36, 38, .05)",
@@ -314,7 +314,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
           onFocus={[Function]}
           onKeyDown={[Function]}
           style={
-            Object {
+            {
               "borderColor": "rgba(34, 36, 38, .05)",
               "borderLeft": "none",
               "borderRadius": 0,
@@ -347,7 +347,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
         onClick={[Function]}
         size="small"
         style={
-          Object {
+          {
             "borderBottomLeftRadius": 0,
             "borderTopLeftRadius": 0,
             "margin": 0,

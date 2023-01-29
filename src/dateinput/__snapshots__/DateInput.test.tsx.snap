@@ -3,7 +3,7 @@
 exports[`render() should render buttons without tooltips when doubleClickStepCounts are zero 1`] = `
 <div
   style={
-    Object {
+    {
       "display": "flex",
     }
   }
@@ -15,7 +15,7 @@ exports[`render() should render buttons without tooltips when doubleClickStepCou
     onClick={[Function]}
     size="small"
     style={
-      Object {
+      {
         "borderBottomRightRadius": 0,
         "borderTopRightRadius": 0,
         "margin": 0,
@@ -44,7 +44,7 @@ exports[`render() should render buttons without tooltips when doubleClickStepCou
           onFocus={[Function]}
           onKeyDown={[Function]}
           style={
-            Object {
+            {
               "borderColor": "rgba(34, 36, 38, .05)",
               "borderRadius": 0,
               "borderRightColor": "rgba(34, 36, 38, .05)",
@@ -82,7 +82,7 @@ exports[`render() should render buttons without tooltips when doubleClickStepCou
           onFocus={[Function]}
           onKeyDown={[Function]}
           style={
-            Object {
+            {
               "borderColor": "rgba(34, 36, 38, .05)",
               "borderLeft": "none",
               "borderRadius": 0,
@@ -109,7 +109,7 @@ exports[`render() should render buttons without tooltips when doubleClickStepCou
       onFocus={[Function]}
       onKeyDown={[Function]}
       style={
-        Object {
+        {
           "borderColor": "rgba(34, 36, 38, .05)",
           "borderLeft": "none",
           "borderRadius": 0,
@@ -130,7 +130,7 @@ exports[`render() should render buttons without tooltips when doubleClickStepCou
     onClick={[Function]}
     size="small"
     style={
-      Object {
+      {
         "borderBottomLeftRadius": 0,
         "borderTopLeftRadius": 0,
         "margin": 0,
@@ -145,7 +145,7 @@ exports[`render() should render buttons without tooltips when doubleClickStepCou
 exports[`render() should render component correctly when buttonPlacement is "buttonsInside" and dateFormat is "D M YYYY" 1`] = `
 <div
   style={
-    Object {
+    {
       "display": "flex",
     }
   }
@@ -170,7 +170,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
           onFocus={[Function]}
           onKeyDown={[Function]}
           style={
-            Object {
+            {
               "borderBottomRightRadius": 0,
               "borderTopRightRadius": 0,
               "color": "#85b7d9",
@@ -189,7 +189,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
   />
   <div
     style={
-      Object {
+      {
         "display": "flex",
         "flexDirection": "column",
       }
@@ -212,7 +212,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
           onClick={[Function]}
           size="small"
           style={
-            Object {
+            {
               "borderRadius": 0,
               "flex": "0 0 50%",
               "margin": 0,
@@ -241,7 +241,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
           onClick={[Function]}
           size="small"
           style={
-            Object {
+            {
               "borderRadius": 0,
               "flex": "0 0 50%",
               "margin": 0,
@@ -274,7 +274,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
           onFocus={[Function]}
           onKeyDown={[Function]}
           style={
-            Object {
+            {
               "borderRadius": 0,
               "paddingLeft": "0.5em",
               "paddingRight": "0.5em",
@@ -290,7 +290,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
   />
   <div
     style={
-      Object {
+      {
         "display": "flex",
         "flexDirection": "column",
       }
@@ -313,7 +313,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
           onClick={[Function]}
           size="small"
           style={
-            Object {
+            {
               "borderRadius": 0,
               "flex": "0 0 50%",
               "margin": 0,
@@ -342,7 +342,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
           onClick={[Function]}
           size="small"
           style={
-            Object {
+            {
               "borderRadius": 0,
               "flex": "0 0 50%",
               "margin": 0,
@@ -365,7 +365,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
       onFocus={[Function]}
       onKeyDown={[Function]}
       style={
-        Object {
+        {
           "borderRadius": 0,
           "paddingLeft": "0.5em",
           "paddingRight": "0.5em",
@@ -379,7 +379,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
   </div>
   <div
     style={
-      Object {
+      {
         "display": "flex",
         "flexDirection": "column",
       }
@@ -402,7 +402,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
           onClick={[Function]}
           size="small"
           style={
-            Object {
+            {
               "borderBottomLeftRadius": 0,
               "borderBottomRightRadius": 0,
               "borderTopLeftRadius": 0,
@@ -433,7 +433,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
           onClick={[Function]}
           size="small"
           style={
-            Object {
+            {
               "borderBottomLeftRadius": 0,
               "borderTopLeftRadius": 0,
               "borderTopRightRadius": 0,
@@ -454,7 +454,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
 exports[`render() should render component correctly when buttonPlacement is "buttonsInside" and dateFormat is "M D YYYY" 1`] = `
 <div
   style={
-    Object {
+    {
       "display": "flex",
     }
   }
@@ -479,7 +479,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
           onFocus={[Function]}
           onKeyDown={[Function]}
           style={
-            Object {
+            {
               "borderBottomRightRadius": 0,
               "borderTopRightRadius": 0,
               "paddingLeft": "0.5em",
@@ -496,7 +496,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
   />
   <div
     style={
-      Object {
+      {
         "display": "flex",
         "flexDirection": "column",
       }
@@ -519,7 +519,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
           onClick={[Function]}
           size="small"
           style={
-            Object {
+            {
               "borderRadius": 0,
               "flex": "0 0 50%",
               "margin": 0,
@@ -548,7 +548,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
           onClick={[Function]}
           size="small"
           style={
-            Object {
+            {
               "borderRadius": 0,
               "flex": "0 0 50%",
               "margin": 0,
@@ -581,7 +581,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
           onFocus={[Function]}
           onKeyDown={[Function]}
           style={
-            Object {
+            {
               "borderRadius": 0,
               "color": "#85b7d9",
               "fontWeight": "bold",
@@ -599,7 +599,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
   />
   <div
     style={
-      Object {
+      {
         "display": "flex",
         "flexDirection": "column",
       }
@@ -622,7 +622,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
           onClick={[Function]}
           size="small"
           style={
-            Object {
+            {
               "borderRadius": 0,
               "flex": "0 0 50%",
               "margin": 0,
@@ -651,7 +651,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
           onClick={[Function]}
           size="small"
           style={
-            Object {
+            {
               "borderRadius": 0,
               "flex": "0 0 50%",
               "margin": 0,
@@ -674,7 +674,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
       onFocus={[Function]}
       onKeyDown={[Function]}
       style={
-        Object {
+        {
           "borderRadius": 0,
           "paddingLeft": "0.5em",
           "paddingRight": "0.5em",
@@ -688,7 +688,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
   </div>
   <div
     style={
-      Object {
+      {
         "display": "flex",
         "flexDirection": "column",
       }
@@ -711,7 +711,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
           onClick={[Function]}
           size="small"
           style={
-            Object {
+            {
               "borderBottomLeftRadius": 0,
               "borderBottomRightRadius": 0,
               "borderTopLeftRadius": 0,
@@ -742,7 +742,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
           onClick={[Function]}
           size="small"
           style={
-            Object {
+            {
               "borderBottomLeftRadius": 0,
               "borderTopLeftRadius": 0,
               "borderTopRightRadius": 0,
@@ -763,7 +763,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
 exports[`render() should render component correctly when buttonPlacement is "buttonsOutside" and dateFormat is "D M YYYY" 1`] = `
 <div
   style={
-    Object {
+    {
       "display": "flex",
     }
   }
@@ -785,7 +785,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
         onClick={[Function]}
         size="small"
         style={
-          Object {
+          {
             "borderBottomRightRadius": 0,
             "borderTopRightRadius": 0,
             "margin": 0,
@@ -816,7 +816,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
           onFocus={[Function]}
           onKeyDown={[Function]}
           style={
-            Object {
+            {
               "borderColor": "rgba(34, 36, 38, .05)",
               "borderRadius": 0,
               "borderRightColor": "rgba(34, 36, 38, .05)",
@@ -854,7 +854,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
           onFocus={[Function]}
           onKeyDown={[Function]}
           style={
-            Object {
+            {
               "borderColor": "rgba(34, 36, 38, .05)",
               "borderLeft": "none",
               "borderRadius": 0,
@@ -881,7 +881,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
       onFocus={[Function]}
       onKeyDown={[Function]}
       style={
-        Object {
+        {
           "borderColor": "rgba(34, 36, 38, .05)",
           "borderLeft": "none",
           "borderRadius": 0,
@@ -912,7 +912,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
         onClick={[Function]}
         size="small"
         style={
-          Object {
+          {
             "borderBottomLeftRadius": 0,
             "borderTopLeftRadius": 0,
             "margin": 0,
@@ -929,7 +929,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
 exports[`render() should render component correctly when buttonPlacement is "buttonsOutside" and dateFormat is "M D YYYY" 1`] = `
 <div
   style={
-    Object {
+    {
       "display": "flex",
     }
   }
@@ -954,7 +954,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
           onFocus={[Function]}
           onKeyDown={[Function]}
           style={
-            Object {
+            {
               "borderBottomRightRadius": 0,
               "borderColor": "rgba(34, 36, 38, .05)",
               "borderRadius": 0,
@@ -973,7 +973,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
   />
   <div
     style={
-      Object {
+      {
         "display": "flex",
         "flexDirection": "column",
       }
@@ -996,7 +996,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
           onClick={[Function]}
           size="small"
           style={
-            Object {
+            {
               "borderRadius": 0,
               "margin": 0,
               "maxHeight": "unset",
@@ -1023,7 +1023,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
           onClick={[Function]}
           size="small"
           style={
-            Object {
+            {
               "borderRadius": 0,
               "margin": 0,
               "maxHeight": "unset",
@@ -1054,7 +1054,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
           onFocus={[Function]}
           onKeyDown={[Function]}
           style={
-            Object {
+            {
               "borderColor": "rgba(34, 36, 38, .05)",
               "borderRadius": 0,
               "color": "#85b7d9",
@@ -1073,7 +1073,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
   />
   <div
     style={
-      Object {
+      {
         "display": "flex",
         "flexDirection": "column",
       }
@@ -1096,7 +1096,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
           onClick={[Function]}
           size="small"
           style={
-            Object {
+            {
               "borderRadius": 0,
               "margin": 0,
               "maxHeight": "unset",
@@ -1123,7 +1123,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
           onClick={[Function]}
           size="small"
           style={
-            Object {
+            {
               "borderRadius": 0,
               "margin": 0,
               "maxHeight": "unset",
@@ -1144,7 +1144,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
       onFocus={[Function]}
       onKeyDown={[Function]}
       style={
-        Object {
+        {
           "borderColor": "rgba(34, 36, 38, .05)",
           "borderRadius": 0,
           "paddingLeft": "0.5em",
@@ -1159,7 +1159,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
   </div>
   <div
     style={
-      Object {
+      {
         "display": "flex",
         "flexDirection": "column",
       }
@@ -1182,7 +1182,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
           onClick={[Function]}
           size="small"
           style={
-            Object {
+            {
               "borderBottomLeftRadius": 0,
               "borderBottomRightRadius": 0,
               "borderTopLeftRadius": 0,
@@ -1211,7 +1211,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
           onClick={[Function]}
           size="small"
           style={
-            Object {
+            {
               "borderBottomLeftRadius": 0,
               "borderTopLeftRadius": 0,
               "borderTopRightRadius": 0,
@@ -1230,7 +1230,7 @@ exports[`render() should render component correctly when buttonPlacement is "but
 exports[`render() should render component correctly without tooltips 1`] = `
 <div
   style={
-    Object {
+    {
       "display": "flex",
     }
   }
@@ -1242,7 +1242,7 @@ exports[`render() should render component correctly without tooltips 1`] = `
     onClick={[Function]}
     size="small"
     style={
-      Object {
+      {
         "borderBottomRightRadius": 0,
         "borderTopRightRadius": 0,
         "margin": 0,
@@ -1261,7 +1261,7 @@ exports[`render() should render component correctly without tooltips 1`] = `
       onFocus={[Function]}
       onKeyDown={[Function]}
       style={
-        Object {
+        {
           "borderColor": "rgba(34, 36, 38, .05)",
           "borderRadius": 0,
           "borderRightColor": "rgba(34, 36, 38, .05)",
@@ -1287,7 +1287,7 @@ exports[`render() should render component correctly without tooltips 1`] = `
       onFocus={[Function]}
       onKeyDown={[Function]}
       style={
-        Object {
+        {
           "borderColor": "rgba(34, 36, 38, .05)",
           "borderLeft": "none",
           "borderRadius": 0,
@@ -1312,7 +1312,7 @@ exports[`render() should render component correctly without tooltips 1`] = `
       onFocus={[Function]}
       onKeyDown={[Function]}
       style={
-        Object {
+        {
           "borderColor": "rgba(34, 36, 38, .05)",
           "borderLeft": "none",
           "borderRadius": 0,
@@ -1333,7 +1333,7 @@ exports[`render() should render component correctly without tooltips 1`] = `
     onClick={[Function]}
     size="small"
     style={
-      Object {
+      {
         "borderBottomLeftRadius": 0,
         "borderTopLeftRadius": 0,
         "margin": 0,
@@ -1348,7 +1348,7 @@ exports[`render() should render component correctly without tooltips 1`] = `
 exports[`render() should render inputs without tooltips when valueType is "unspecified" 1`] = `
 <div
   style={
-    Object {
+    {
       "display": "flex",
     }
   }
@@ -1370,7 +1370,7 @@ exports[`render() should render inputs without tooltips when valueType is "unspe
         onClick={[Function]}
         size="small"
         style={
-          Object {
+          {
             "borderBottomRightRadius": 0,
             "borderTopRightRadius": 0,
             "margin": 0,
@@ -1391,7 +1391,7 @@ exports[`render() should render inputs without tooltips when valueType is "unspe
       onFocus={[Function]}
       onKeyDown={[Function]}
       style={
-        Object {
+        {
           "borderColor": "rgba(34, 36, 38, .05)",
           "borderRadius": 0,
           "borderRightColor": "rgba(34, 36, 38, .05)",
@@ -1417,7 +1417,7 @@ exports[`render() should render inputs without tooltips when valueType is "unspe
       onFocus={[Function]}
       onKeyDown={[Function]}
       style={
-        Object {
+        {
           "borderColor": "rgba(34, 36, 38, .05)",
           "borderLeft": "none",
           "borderRadius": 0,
@@ -1442,7 +1442,7 @@ exports[`render() should render inputs without tooltips when valueType is "unspe
       onFocus={[Function]}
       onKeyDown={[Function]}
       style={
-        Object {
+        {
           "borderColor": "rgba(34, 36, 38, .05)",
           "borderLeft": "none",
           "borderRadius": 0,
@@ -1473,7 +1473,7 @@ exports[`render() should render inputs without tooltips when valueType is "unspe
         onClick={[Function]}
         size="small"
         style={
-          Object {
+          {
             "borderBottomLeftRadius": 0,
             "borderTopLeftRadius": 0,
             "margin": 0,
